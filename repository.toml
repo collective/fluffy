@@ -1,0 +1,35 @@
+[repository]
+name = "fluffy"
+managed_by_uv = false
+changelog = "CHANGELOG.md"
+version = "version.txt"
+compose = "docker-compose.yml"
+
+[repository.towncrier]
+section = "Project"
+settings = "towncrier.toml"
+
+[backend]
+path = "backend"
+
+[backend.package]
+name = "fluffy"
+path = "backend"
+changelog = "backend/CHANGELOG.md"
+towncrier_settings = "backend/pyproject.toml"
+publish = false
+
+[frontend]
+path = "frontend"
+
+[frontend.package]
+name = "volto-fluffy"
+path = "frontend/packages/volto-fluffy"
+changelog = "frontend/packages/volto-fluffy/CHANGELOG.md"
+towncrier_settings = "frontend/packages/volto-fluffy/towncrier.toml"
+publish = false
+
+[cookieplone]
+template = "project"
+template_version = "f7b4978a3f7ff20f12fb35f0ba03880e16c59130"
+generated_date = "2025-04-08 20:13:26"
