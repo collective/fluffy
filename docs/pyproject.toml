@@ -1,6 +1,6 @@
 [project]
 name = "Fluffy_Documentation"
-description = "Fluffy"
+description = "A new project using Plone 6."
 keywords = [
     "Fluffy",
     "documentation",
@@ -53,7 +53,7 @@ dev = [
 ]
 
 [project.urls]
-Repository = "https://github.com/collective/docs"
+Repository = "https://github.com/collective/fluffy"
 Documentation = "https://MY_READTHEDOCS_PROJECT_SLUG.readthedocs.io/"
 
 [build-system]

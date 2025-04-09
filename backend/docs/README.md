@@ -1,7 +1,7 @@
 # Fluffy
 
-Documentation for docs.
-Fluffy
+Documentation for Fluffy.
+A new project using Plone 6.
 
 This project provides a Sphinx-based documentation environment for your Plone project, powered by the [Plone Sphinx Theme](https://github.com/plone/plone-sphinx-theme).
 It's generated using the `documentation_starter` template from [Cookieplone](https://github.com/plone/cookieplone).

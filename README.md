@@ -5,7 +5,7 @@
 [![Backend Tests](https://github.com/collective/fluffy/actions/workflows/backend.yml/badge.svg)](https://github.com/collective/fluffy/actions/workflows/backend.yml)
 [![Frontend Tests](https://github.com/collective/fluffy/actions/workflows/frontend.yml/badge.svg)](https://github.com/collective/fluffy/actions/workflows/frontend.yml)
 
-Fluffy
+A new project using Plone 6.
 
 ## Quick Start 🏁
 
@@ -143,4 +143,4 @@ make i18n
 
 ## Credits and Acknowledgements 🙏
 
-Generated using [Cookieplone (0.9.6)](https://github.com/plone/cookieplone) and [cookieplone-templates (f7b4978)](https://github.com/plone/cookieplone-templates/commit/f7b4978a3f7ff20f12fb35f0ba03880e16c59130) on 2025-04-08 13:13:03.715531. A special thanks to all contributors and supporters!
+Generated using [Cookieplone (0.9.6)](https://github.com/plone/cookieplone) and [cookieplone-templates (3344406)](https://github.com/plone/cookieplone-templates/commit/3344406a20f8f327c7b2e346de211227e57e90b2) on 2025-04-09 01:38:26.336045. A special thanks to all contributors and supporters!

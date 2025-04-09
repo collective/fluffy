@@ -1,16 +1,16 @@
 ---
 myst:
   html_meta:
-    "description": "Fluffy"
-    "property=og:description": "Fluffy"
+    "description": "A new project using Plone 6."
+    "property=og:description": "A new project using Plone 6."
     "property=og:title": "Fluffy"
-    "keywords": "Fluffy, documentation, Fluffy"
+    "keywords": "Fluffy, documentation, A new project using Plone 6."
 ---
 
 # Fluffy
 
-Welcome to the documentation for docs!
-Fluffy
+Welcome to the documentation for Fluffy!
+A new project using Plone 6.
 
 This scaffold provides a ready-to-use environment for creating comprehensive documentation for Plone projects, based on [Plone Sphinx Theme](https://github.com/plone/plone-sphinx-theme).
 

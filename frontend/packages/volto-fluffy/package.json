@@ -1,7 +1,7 @@
 {
   "name": "volto-fluffy",
   "version": "1.0.0-alpha.0",
-  "description": "Fluffy",
+  "description": "A new project using Plone 6.",
   "main": "src/index.js",
   "license": "MIT",
   "keywords": [
