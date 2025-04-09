@@ -22,6 +22,6 @@ build:
       then
         exit 183;
       fi
-    - ls -al
+    - cd docs
     - pwd
     - make rtd-pr-preview
