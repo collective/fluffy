@@ -9,8 +9,6 @@ myst:
 
 # Fluffy
 
-Welcome to World Plone Day 2025!
-
 Welcome to the documentation for Fluffy!
 A new project using Plone 6.
 
