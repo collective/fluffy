@@ -17,6 +17,7 @@ name = "fluffy"
 path = "backend"
 changelog = "backend/CHANGELOG.md"
 towncrier_settings = "backend/pyproject.toml"
+base_package = "Products.CMFPlone"
 publish = false
 
 [frontend]
@@ -27,9 +28,10 @@ name = "volto-fluffy"
 path = "frontend/packages/volto-fluffy"
 changelog = "frontend/packages/volto-fluffy/CHANGELOG.md"
 towncrier_settings = "frontend/packages/volto-fluffy/towncrier.toml"
+base_package = "@plone/volto"
 publish = false
 
 [cookieplone]
 template = "project"
-template_version = "3344406a20f8f327c7b2e346de211227e57e90b2"
-generated_date = "2025-04-09 08:38:34"
+template_version = "bae8b36d70b1461f0ea43498a636a8381f0ae2a8"
+generated_date = "2025-04-21 08:11:24"

@@ -31,6 +31,7 @@ dependencies = [
 
 [project.optional-dependencies]
 test = [
+    "horse-with-no-namespace",
     "plone.app.testing",
     "plone.restapi[test]",
     "pytest",
@@ -71,7 +72,7 @@ packages = ["src/fluffy"]
 
 [tool.towncrier]
 directory = "news/"
-filename = "CHANGES.md"
+filename = "CHANGELOG.md"
 start_string = "<!-- towncrier release notes start -->\n"
 title_format = "## {version} ({project_date})"
 template = "news/.changelog_template.jinja"
@@ -175,3 +176,6 @@ testpaths = ["tests"]
 source_pkgs = ["fluffy", "tests"]
 branch = true
 parallel = true
+omit = [
+  "src/fluffy/locales/*.py",
+]
