@@ -36,7 +36,7 @@ jobs:
 
       - name: Install requirements
         run: |
-          cd docs && make install
+          cd docs && ls -al && pwd && cat Makefile && make install
 
       - name: Check for broken links
         run: |
