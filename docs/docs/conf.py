@@ -201,7 +201,7 @@ html_use_opensearch = "https://MY_READTHEDOCS_PROJECT_SLUG.readthedocs.io"
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = "%(project)s v%(release)s" % {"project": project, "release": release}
+html_title = f"{project} v{release}"
 
 # If false, no index is generated.
 html_use_index = True

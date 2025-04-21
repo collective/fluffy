@@ -1,7 +1,7 @@
 # Fluffy 🚀
 
 [![Built with Cookieplone](https://img.shields.io/badge/built%20with-Cookieplone-0083be.svg?logo=cookiecutter)](https://github.com/plone/cookieplone-templates/)
-[![Black code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+[![Black code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 [![Backend Tests](https://github.com/collective/fluffy/actions/workflows/backend.yml/badge.svg)](https://github.com/collective/fluffy/actions/workflows/backend.yml)
 [![Frontend Tests](https://github.com/collective/fluffy/actions/workflows/frontend.yml/badge.svg)](https://github.com/collective/fluffy/actions/workflows/frontend.yml)
 
@@ -11,47 +11,50 @@ A new project using Plone 6.
 
 ### Prerequisites ✅
 
-Ensure you have the following installed:
+-   An [operating system](https://6.docs.plone.org/install/create-project-cookieplone.html#prerequisites-for-installation) that runs all the requirements mentioned.
+-   [uv](https://6.docs.plone.org/install/create-project-cookieplone.html#uv)
+-   [nvm](https://6.docs.plone.org/install/create-project-cookieplone.html#nvm)
+-   [Node.js and pnpm](https://6.docs.plone.org/install/create-project.html#node-js) 22
+-   [Make](https://6.docs.plone.org/install/create-project-cookieplone.html#make)
+-   [Git](https://6.docs.plone.org/install/create-project-cookieplone.html#git)
+-   [Docker](https://docs.docker.com/get-started/get-docker/) (optional)
 
-- Python 3.11 🐍
-- Node 22 🟩
-- pnpm 🧶
-- Docker 🐳
 
 ### Installation 🔧
 
-1. Clone the repository:
+1.  Clone this repository, then change your working directory.
 
-```shell
-git clone git@github.com:collective/fluffy.git
-cd fluffy
-```
+    ```shell
+    git clone git@github.com:collective/fluffy.git
+    cd fluffy
+    ```
 
-2. Install both Backend and Frontend:
+2.  Install this code base.
 
-```shell
-make install
-```
+    ```shell
+    make install
+    ```
+
 
 ### Fire Up the Servers 🔥
 
-1. Create a new Plone site on your first run:
+1.  Create a new Plone site on your first run.
 
-```shell
-make backend-create-site
-```
+    ```shell
+    make backend-create-site
+    ```
 
-2. Start the Backend at [http://localhost:8080/](http://localhost:8080/):
+2.  Start the backend at http://localhost:8080/.
 
-```shell
-make backend-start
-```
+    ```shell
+    make backend-start
+    ```
 
-3. In a new terminal, start the Frontend at [http://localhost:3000/](http://localhost:3000/):
+3.  In a new shell session, start the frontend at http://localhost:3000/.
 
-```shell
-make frontend-start
-```
+    ```shell
+    make frontend-start
+    ```
 
 Voila! Your Plone site should be live and kicking! 🎉
 
@@ -143,4 +146,4 @@ make i18n
 
 ## Credits and Acknowledgements 🙏
 
-Generated using [Cookieplone (0.9.6)](https://github.com/plone/cookieplone) and [cookieplone-templates (3344406)](https://github.com/plone/cookieplone-templates/commit/3344406a20f8f327c7b2e346de211227e57e90b2) on 2025-04-09 01:38:26.336045. A special thanks to all contributors and supporters!
+Generated using [Cookieplone (0.9.7)](https://github.com/plone/cookieplone) and [cookieplone-templates (bae8b36)](https://github.com/plone/cookieplone-templates/commit/bae8b36d70b1461f0ea43498a636a8381f0ae2a8) on 2025-04-21 01:11:13.673478. A special thanks to all contributors and supporters!

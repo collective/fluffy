@@ -11,10 +11,10 @@
     "react"
   ],
   "author": "Plone Foundation",
-  "homepage": "https://github.com/collective/volto-fluffy#readme",
+  "homepage": "https://github.com/collective/fluffy#readme",
   "repository": {
     "type": "git",
-    "url": "git@github.com:collective/volto-fluffy.git"
+    "url": "git@github.com:collective/fluffy"
   },
   "publishConfig": {
     "access": "public"
@@ -26,6 +26,7 @@
     "release-major-alpha": "release-it major --preRelease=alpha",
     "release-alpha": "release-it --preRelease=alpha"
   },
+  "addons": [],
   "dependencies": {},
   "peerDependencies": {
     "react": "18.2.0",
