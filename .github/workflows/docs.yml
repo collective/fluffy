@@ -9,7 +9,7 @@ on:
 
 defaults:
   run:
-    working-directory: backend
+    working-directory: docs
 
 jobs:
   docs:
@@ -29,23 +29,24 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ${{ env.UV_CACHE_DIR }}
-          key: uv-${{ runner.os }}-${{ inputs.python-version }}-${{ hashFiles('pyproject.toml') }}
+          key: uv-${{ runner.os }}-${{ inputs.python-version }}-${{ hashFiles('pyproject.toml') }}-${{ hashFiles('uv.lock') }}
           restore-keys: |
+            uv-${{ runner.os }}-${{ inputs.python-version }}-${{ hashFiles('pyproject.toml') }}-${{ hashFiles('uv.lock') }}
             uv-${{ runner.os }}-${{ inputs.python-version }}-${{ hashFiles('pyproject.toml') }}
             uv-${{ runner.os }}-${{ inputs.python-version }}
 
       - name: Install requirements
         run: |
-          cd docs && ls -al && pwd && cat Makefile && make install
+          make install
 
       - name: Check for broken links
         run: |
-          cd docs && make linkcheckbroken
+          make linkcheckbroken
 
       - name: Build HTML documentation
         run: |
-          cd docs && make html
+          make html
 
       - name: Run vale
         run: |
-          cd docs && make vale VALEOPTS="--minAlertLevel='warning'"
+          make vale VALEOPTS="--minAlertLevel='warning'"
