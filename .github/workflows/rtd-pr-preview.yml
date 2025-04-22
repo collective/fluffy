@@ -19,5 +19,5 @@ jobs:
     steps:
       - uses: readthedocs/actions/preview@v1
         with:
-          project-slug: "MY_READTHEDOCS_PROJECT_SLUG"
+          project-slug: "collective-fluffy"
           single-version: "true"

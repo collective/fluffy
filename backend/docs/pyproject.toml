@@ -54,7 +54,7 @@ dev = [
 
 [project.urls]
 Repository = "https://github.com/collective/fluffy"
-Documentation = "https://MY_READTHEDOCS_PROJECT_SLUG.readthedocs.io/"
+Documentation = "https://collective-fluffy.readthedocs.io/"
 
 [build-system]
 requires = ["setuptools"]

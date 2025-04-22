@@ -10,7 +10,7 @@ PAPER           ?=
 GREEN=`tput setaf 2`
 RESET=`tput sgr0`
 DOCS_DIR        = ./docs/
-BUILDDIR        = ./_build/
+BUILDDIR        = ./_build
 PAPEROPT_a4     = -D latex_paper_size=a4
 PAPEROPT_letter = -D latex_paper_size=letter
 ALLSPHINXOPTS   = -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) $(DOCS_DIR)
@@ -99,21 +99,21 @@ rtd-pr-preview: rtd-prepare .venv/bin/python ## Build pull request preview on Re
 # test
 .PHONY: linkcheck
 linkcheck: .venv/bin/python  ## Run linkcheck
-	@uv run sphinx-build -b linkcheck $(ALLSPHINXOPTS) $(READTHEDOCS_OUTPUT)/linkcheck
+	@uv run sphinx-build -b linkcheck $(ALLSPHINXOPTS) $(BUILDDIR)/linkcheck
 	@echo
 	@echo "Link check complete; look for any errors in the above output " \
 		"or in $(BUILDDIR)/linkcheck/ ."
 
 .PHONY: linkcheckbroken
 linkcheckbroken: .venv/bin/python  ## Run linkcheck and show only broken links
-	@uv run sphinx-build -b linkcheck $(ALLSPHINXOPTS) $(READTHEDOCS_OUTPUT)/linkcheck | GREP_COLORS='0;31' grep -wi "broken\|redirect" --color=always | GREP_COLORS='0;31' grep -vi "https://github.com/plone/volto/issues/" --color=always && if test $$? = 0; then exit 1; fi || test $$? = 1
+	@uv run sphinx-build -b linkcheck $(ALLSPHINXOPTS) $(BUILDDIR)/linkcheck | GREP_COLORS='0;31' grep -wi "broken\|redirect" --color=always | GREP_COLORS='0;31' grep -vi "https://github.com/plone/volto/issues/" --color=always && if test $$? = 0; then exit 1; fi || test $$? = 1
 	@echo
 	@echo "Link check complete; look for any errors in the above output " \
 		"or in $(BUILDDIR)/linkcheck/ ."
 
 .PHONY: doctest
 doctest: .venv/bin/python  ## Test snippets in the documentation
-	@uv run sphinx-build -b doctest $(ALLSPHINXOPTS) $(READTHEDOCS_OUTPUT)/doctest
+	@uv run sphinx-build -b doctest $(ALLSPHINXOPTS) $(BUILDDIR)/doctest
 	@echo "Testing of doctests in the sources finished, look at the " \
 	      "results in $(BUILDDIR)/doctest/output.txt."
 
