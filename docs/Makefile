@@ -32,7 +32,6 @@ help:  # This help message
 .PHONY: install
 install:  .venv/bin/python ## Sync package requirements
 
-
 .PHONY: init
 init: clean clean-python .venv/bin/python  ## Clean docs build directory and Python, and initialize Python virtual environment
 
@@ -93,7 +92,7 @@ rtd-prepare:  ## Prepare environment on Read the Docs
 
 .PHONY: rtd-pr-preview  ## Build pull request previews on Read the Docs
 rtd-pr-preview: rtd-prepare .venv/bin/python ## Build pull request preview on Read the Docs
-	cd $(DOCS_DIR) && $(SPHINXBUILD) -b html $(ALLSPHINXOPTS) ${READTHEDOCS_OUTPUT}/html/
+	@uv run sphinx-build -b html $(ALLSPHINXOPTS) $(READTHEDOCS_OUTPUT)/html
 # /documentation builders
 
 
